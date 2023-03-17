@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkinterior_design_vuetify_js"]=self["webpackChunkinterior_design_vuetify_js"]||[]).push([[443],{6506:function(n,e,i){i.r(e),i.d(e,{default:function(){return _}});var t=i(3396);const r={class:"about"},s=(0,t._)("h1",null,"This is an about page",-1),u=[s];function a(n,e){return(0,t.wg)(),(0,t.iD)("div",r,u)}var c=i(89);const o={},f=(0,c.Z)(o,[["render",a]]);var _=f}}]);
+//# sourceMappingURL=about.c08a2774.js.map

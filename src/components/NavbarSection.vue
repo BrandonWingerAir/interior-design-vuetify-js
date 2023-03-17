@@ -2,7 +2,7 @@
   <v-app-bar app color="black" dark flat class="px-12">
     <v-btn class="text-none">
       <v-icon color="#8d6e63" left class="mr-2 mb-1">fas fa-chair</v-icon>
-      inDesign
+      inDesigns
     </v-btn>
     <v-spacer></v-spacer>
     <v-btn text @click="scroll('home')" color="#a1887f">Home</v-btn>

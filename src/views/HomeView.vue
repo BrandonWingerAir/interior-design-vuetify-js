@@ -2,7 +2,7 @@
   <v-app id="home">
     <NavbarSection/>
     <v-container fluid>
-      <div class="head">
+      <div class="hero">
         <v-row>
           <v-col cols="5">
             <div style="position: relative" class="mt-16 pt-4">
@@ -30,7 +30,7 @@
         <div>
           <v-row>
             <v-col cols="12" sm="6">
-              <div class="egg">
+              <div class="circle-shape">
                 <v-img src="plant.png" max-height="400" class="about-img"></v-img>
               </div>
             </v-col>
@@ -70,6 +70,61 @@
           <v-slider v-model="slider2" color="#d7ccc8"></v-slider>
         </div>
       </div>
+
+      <v-col cols="12" class="pad" id="portfolio">
+        <div class="section-1" id="project">
+          <v-row>
+            <v-col cols="12">
+              <div class="block">
+                <v-btn icon="fa-solid fa-chair" color="#d7ccc8" class="text-white pb-1"></v-btn>
+                <h3 class="ml-3 mt-4">Office</h3>
+                <p class="text-grey ml-3 mt-4 text-caption">
+                  Lorem ipsum dolor sit amet 
+                  <br>
+                  consectetur, adipisicing 
+                  <br>
+                  elit. Modi.
+                </p>
+              </div>
+              
+              <div class="block">
+                <v-btn icon="fas fa-house" color="#d7ccc8" class="text-white pb-1 pr-1"></v-btn>
+                <h3 class="ml-3 mt-4">Homes</h3>      
+                <p class="text-grey ml-3 mt-4 text-caption">
+                  Lorem ipsum dolor sit amet 
+                  <br>
+                  consectetur, adipisicing 
+                  <br>
+                  elit. Modi.
+                </p>
+              </div>
+
+              <div class="block">
+                <v-btn icon="fa-solid fa-spa" color="#d7ccc8" class="text-white icon-pad"></v-btn>
+                <h3 class="ml-3 mt-4">Outdoor</h3>
+                <p class="text-grey ml-3 mt-4 text-caption">
+                  Lorem ipsum dolor sit amet 
+                  <br>
+                  consectetur, adipisicing 
+                  <br>
+                  elit. Modi.
+                </p>
+              </div>
+            </v-col>
+          </v-row>
+          <v-divider></v-divider>
+        </div>
+      </v-col>
+
+      <v-col cols="12" sm="12" id="services">
+        <div class="d-flex justify-center mb-6">
+          <v-btn color="#d7ccc8" class="mr-2">All</v-btn>
+          <v-btn class="mr-2" variant="tonal">Homes</v-btn>
+          <v-btn class="mr-2" variant="tonal">Offices</v-btn>
+          <v-btn class="mr-2" variant="tonal">Patios</v-btn>
+          <v-btn variant="tonal">Landscapes</v-btn>
+        </div>
+      </v-col>
     </v-container>
   </v-app>
 </template>
@@ -99,7 +154,7 @@ export default defineComponent({
   padding: 16px 0;
 }
 
-.head {
+.hero {
   position: relative;
   text-align: center;
   padding: 12px;
@@ -109,7 +164,7 @@ export default defineComponent({
   color: white;
 }
 
-.head:before {
+.hero:before {
   content: "";
   position: absolute;
   top: -1%;
@@ -120,7 +175,7 @@ export default defineComponent({
   transform: skew(0deg, 6deg);
 }
 
-.head:after {
+.hero:after {
   content: "";
   position: absolute;
   top: -1%;
@@ -131,7 +186,7 @@ export default defineComponent({
   transform: skew(0deg, -6deg);
 }
 
-.egg {
+.circle-shape {
   display: block;
   margin-left: 100px;
   margin: 50px auto;
@@ -144,5 +199,44 @@ export default defineComponent({
 .about-img {
   bottom: 100px;
   left: 10px;
+}
+
+.section-1 {
+  width: 100%;
+  height: 280px;
+  text-align: center;
+  padding: 2rem 2rem;
+}
+
+.block {
+  display: inline-block;
+  padding: 2rem 1rem;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.icon-pad {
+  padding-right: 2px;
+}
+
+.imgHover {
+  padding: 0 200px;
+}
+
+.pre {
+  width: 100%;
+  height: 380px;
+  text-align: center;
+  padding: 0 200px;
+  background-color: #f5f5f5;
+}
+
+.hire {
+  width: 100%;
+  height: 200px;
+  padding: 0 200px;
+  background-color: #e9e9e9;
+  margin-top: -24px;
 }
 </style>

@@ -1,2 +1,2 @@
 "use strict";(self["webpackChunkinterior_decor_vuetify_js"]=self["webpackChunkinterior_decor_vuetify_js"]||[]).push([[443],{6506:function(e,n,r){r.r(n),r.d(n,{default:function(){return _}});var t=r(3396);const u={class:"about"},i=(0,t._)("h1",null,"This is an about page",-1),s=[i];function a(e,n){return(0,t.wg)(),(0,t.iD)("div",u,s)}var c=r(89);const o={},f=(0,c.Z)(o,[["render",a]]);var _=f}}]);
-//# sourceMappingURL=about.a72f4b27.js.map
+//# sourceMappingURL=about.13d2a3a0.js.map

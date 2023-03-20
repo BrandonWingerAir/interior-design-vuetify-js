@@ -269,6 +269,8 @@
         </v-row>
       </v-col>
     </v-container>
+
+    <FooterSection/>
   </v-app>
 </template>
 
@@ -277,6 +279,7 @@ import { defineComponent } from 'vue';
 
 // Components
 import NavbarSection from '../components/NavbarSection.vue';
+import FooterSection from '../components/FooterSection.vue';
 
 export default defineComponent({
   name: 'HomeView',
@@ -309,6 +312,7 @@ export default defineComponent({
 
   components: {
     NavbarSection,
+    FooterSection,
   }
 });
 </script>

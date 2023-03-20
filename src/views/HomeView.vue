@@ -26,7 +26,7 @@
         </v-row>
       </div>
 
-      <v-col cols="12" class="mt-16" id="about">
+      <v-col cols="12" class="mt-16">
         <div>
           <v-row>
             <v-col cols="12" sm="6">
@@ -36,7 +36,7 @@
             </v-col>
 
             <v-col cols="12" sm="6">
-              <h5 class="class">About Us</h5>
+              <h5 class="mt-16 text-uppercase">Designs</h5>
 
               <div style="width: 120px; margin-left: -8px;">
                 <v-slider v-model="slider2" color="#d7ccc8"></v-slider>
@@ -71,7 +71,7 @@
         </div>
       </div>
 
-      <v-col cols="12" class="pad" id="portfolio">
+      <v-col cols="12" class="pad" id="services">
         <div class="section-1" id="project">
           <v-row>
             <v-col cols="12">
@@ -116,7 +116,7 @@
         </div>
       </v-col>
 
-      <v-col cols="12" sm="12" id="services">
+      <v-col cols="12" sm="12" id="portfolio">
         <div class="d-flex justify-center mb-6">
           <v-btn color="#d7ccc8" class="mr-2">Homes</v-btn>
           <v-btn class="mr-2" variant="tonal">Offices</v-btn>
@@ -142,6 +142,51 @@
       <v-col cols="12" sm="12">
         <div class="d-flex justify-center mb-6">
           <v-btn color="#efebe9" class="mt-4">Visual Concepts</v-btn>
+        </div>
+      </v-col>
+
+      <v-col cols="12" id="about">
+        <div class="pre">
+          <v-row>
+            <v-col cols="12" sm="4">
+              <v-card class="mx-auto" max-width="344">
+                <v-img src="dining-room.jpg" height="200px" cover></v-img>
+                <v-card-title>Modern</v-card-title>
+                <v-card-subtitle class="text-uppercase">
+                  Decoration
+                </v-card-subtitle>
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aut pariatur? Aliquid omnis harum eius facilis asperiores?
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+            <v-col cols="12" sm="4">
+              <v-card class="mx-auto" max-width="344">
+                <v-img src="business-office.jpg" height="200px" cover></v-img>
+                <v-card-title>Professional</v-card-title>
+                <v-card-subtitle class="text-uppercase">
+                  Business Spaces
+                </v-card-subtitle>
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aut pariatur? Aliquid omnis harum eius facilis asperiores?
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+            <v-col cols="12" sm="4">
+              <v-card class="mx-auto" max-width="344">
+                <v-img src="holiday-decorations.jpg" height="200px" cover></v-img>
+                <v-card-title>Traditional</v-card-title>
+                <v-card-subtitle class="text-uppercase">
+                  DESIGN PRACTICE
+                </v-card-subtitle>
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aut pariatur? Aliquid omnis harum eius facilis asperiores?
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
         </div>
       </v-col>
     </v-container>

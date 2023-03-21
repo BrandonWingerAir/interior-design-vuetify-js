@@ -1,6 +1,7 @@
 <template>
   <v-app id="home">
     <NavbarSection/>
+    
     <v-container fluid>
       <!-- Hero Section -->
       <div class="hero">

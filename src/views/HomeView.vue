@@ -120,7 +120,7 @@
       </v-col>
 
       <!-- Portfolio Section -->
-      <v-col cols="12" sm="12" id="portfolio">
+      <v-col cols="12" sm="12">
         <div class="d-flex justify-center mb-6">
           <v-btn color="#d7ccc8" class="mr-2">Homes</v-btn>
           <v-btn class="mr-2" variant="tonal">Offices</v-btn>
@@ -129,7 +129,7 @@
         </div>
       </v-col>
 
-      <v-col cols="12" class="imgHover">
+      <v-col cols="12" class="imgHover" id="portfolio">
         <v-row class="fill-height" align="center" justify="center">
           <template v-for="(item, i) in items" :key="i">
             <v-col cols="12" md="4">
@@ -196,7 +196,7 @@
       </v-col>
 
       <!-- Contact Section -->
-      <v-col cols="12" id="contact" class="px-0">
+      <v-col cols="12" class="px-0">
         <div class="hire">
           <v-row>
             <v-col cols="12" sm="8">
@@ -215,7 +215,7 @@
         </div>
       </v-col>
 
-      <v-col cols="12" sm="12" class="px-16">
+      <v-col cols="12" sm="12" id="contact" class="px-16">
         <v-row>
           <v-col cols="12" sm="4">
             <div class="block">
@@ -309,7 +309,17 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style>
+.prevent-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.reset-scroll {
+  height: initial;
+  overflow: initial;
+}
+
 .v-container {
   padding: 16px 0;
 }

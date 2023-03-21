@@ -37,7 +37,7 @@
               </div>
             </v-col>
 
-            <v-col cols="12" sm="6">
+            <v-col cols="12" sm="6" class="pr-12">
               <h5 class="mt-16 text-uppercase">Designs</h5>
 
               <div style="width: 120px; margin-left: -8px;">
@@ -47,7 +47,7 @@
               <h4 class="mt-n4">INDOOR</h4>
               <h4>OUTDOOR</h4>
 
-              <p class="text-grey">
+              <p class="text-grey mt-2">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vitae esse nostrum impedit necessitatibus dolore, magnam ipsam id eos possimus ex nisi. Distinctio ipsam deserunt quas tempore, repudiandae aliquid corrupti.
               </p>
 
@@ -68,7 +68,6 @@
       <!-- Services Section -->
       <div class="text-center mt-4">
         <h2>What We Do</h2>
-
         <div style="width: 120px; margin: 0 auto;">
           <v-slider v-model="slider2" color="#d7ccc8"></v-slider>
         </div>
@@ -79,8 +78,8 @@
           <v-row>
             <v-col cols="12">
               <div class="block">
-                <v-btn icon="fa-solid fa-chair" color="#d7ccc8" class="text-white pb-1"></v-btn>
-                <h3 class="ml-3 mt-4">Office</h3>
+                <v-btn icon="fa-solid fa-chair" color="#d7ccc8" class="text-white pb-1 icon-ml"></v-btn>
+                <h3 class="ml-3 mt-4">Office Space</h3>
                 <p class="text-grey ml-3 mt-4 text-caption">
                   Lorem ipsum dolor sit amet 
                   <br>
@@ -91,8 +90,8 @@
               </div>
               
               <div class="block">
-                <v-btn icon="fas fa-house" color="#d7ccc8" class="text-white pb-1 pr-1"></v-btn>
-                <h3 class="ml-3 mt-4">Homes</h3>      
+                <v-btn icon="fas fa-house" color="#d7ccc8" class="text-white pb-1 pr-1 icon-ml"></v-btn>
+                <h3 class="ml-3 mt-4">Home Space</h3>      
                 <p class="text-grey ml-3 mt-4 text-caption">
                   Lorem ipsum dolor sit amet 
                   <br>
@@ -103,8 +102,8 @@
               </div>
 
               <div class="block">
-                <v-btn icon="fa-solid fa-spa" color="#d7ccc8" class="text-white icon-pad"></v-btn>
-                <h3 class="ml-3 mt-4">Outdoor</h3>
+                <v-btn icon="fa-solid fa-spa" color="#d7ccc8" class="text-white icon-ml icon-pad"></v-btn>
+                <h3 class="ml-3 mt-4">Outdoor Space</h3>
                 <p class="text-grey ml-3 mt-4 text-caption">
                   Lorem ipsum dolor sit amet 
                   <br>
@@ -150,7 +149,7 @@
       </v-col>
 
       <!-- About Section -->
-      <v-col cols="12" id="about">
+      <v-col cols="12" id="about" class="px-0">
         <div class="pre">
           <v-row>
             <v-col cols="12" sm="4">
@@ -196,7 +195,7 @@
       </v-col>
 
       <!-- Contact Section -->
-      <v-col cols="12" id="contact">
+      <v-col cols="12" id="contact" class="px-0">
         <div class="hire">
           <v-row>
             <v-col cols="12" sm="8">
@@ -230,19 +229,11 @@
                 (888) 888-8888
               </span>
               <br>
-              <!-- <span class="text-caption">
-                (888) 888-8888
-              </span>
-              <br> -->
               <v-btn icon="fas fa-envelope" class="mt-10 icon-btn-position" variant="outlined"/>
               <br>
               <span class="text-caption">
                 brandon.air.web@gmail.com
               </span>
-              <!-- <br>
-              <span class="text-caption">
-                brandon.air.web@gmail.com
-              </span> -->
             </div>
           </v-col>
 
@@ -384,6 +375,10 @@ export default defineComponent({
   margin-right: 8px;
 }
 
+.icon-ml {
+  margin-left: 9px;
+}
+
 .icon-pad {
   padding-right: 2px;
 }
@@ -394,9 +389,9 @@ export default defineComponent({
 
 .pre {
   width: 100%;
-  height: 380px;
+  height: 465px;
   text-align: center;
-  padding: 0 200px;
+  padding: 50px 200px 0;
   background-color: #f5f5f5;
 }
 

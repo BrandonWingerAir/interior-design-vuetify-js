@@ -12,7 +12,7 @@
           <h5 class="mt-16 text-uppercase">Designs</h5>
 
           <div style="width: 120px; margin-left: -8px;">
-            <v-slider v-model="slider2" color="#d7ccc8"></v-slider>
+            <v-slider v-model="sliderIcon" color="#d7ccc8"></v-slider>
           </div>
 
           <h4 class="mt-n4">INDOOR</h4>
@@ -39,7 +39,11 @@
 
 <script>
   export default {
-    
+    setup() {
+      return {
+        sliderIcon: 50,
+      }
+    }
   }
 </script>
 

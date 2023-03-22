@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app color="black" dark flat class="px-12">
-    <v-btn  @click="reloadPage" class="text-none">
+    <v-btn @click="reloadPage" class="text-none">
       <v-icon color="#8d6e63" left class="mb-1">fas fa-lightbulb</v-icon>
       <span class="main-logo-text">in<strong>Designs</strong><span class="copyright-sign">&copy;</span></span>
     </v-btn>
@@ -11,12 +11,13 @@
       {{ item }}
     </v-btn>
 
-    <!-- Mobile Menu -->
-    <v-app-bar-nav-icon @click="menuToggle()" class="d-flex d-sm-none"/>
+    <!-- Mobile Menu Icons -->
+    <v-app-bar-nav-icon v-if="!drawer" @click="menuToggle()" class="d-flex d-sm-none"/>
+    <v-btn v-else icon="fas fa-close" @click="menuToggle()" class="d-flex d-sm-none"/>
   </v-app-bar>
 
   <!-- Mobile Navbar -->
-  <v-navigation-drawer v-model="drawer" v-on:update:rail="menuToggle()" temporary>
+  <v-navigation-drawer v-model="drawer" temporary :width="drawerWidth">
     <v-list nav dense>
       <v-list-item-group>
         <v-list-item v-for="item in items" v-bind:key=item>
@@ -34,9 +35,21 @@
     data() {
       return {
         drawer: null,
+        drawerWidth: 0,
         items: [
           'services', 'portfolio', 'about', 'contact',
         ],
+      }
+    },
+    watch: {
+      drawer: function () {
+        if (this.drawer) {
+          document.body.style.height = "100vh";
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.height = "initial";
+          document.body.style.overflow = "scroll";
+        }
       }
     },
     methods: {
@@ -49,13 +62,14 @@
       },
       menuToggle() {
         this.drawer = !this.drawer;
+        this.drawerWidth = screen.width * 0.6;
 
         if (this.drawer) {
-          document.body.classList.remove("reset-scroll");
-          document.body.classList.add("prevent-scroll");
+          document.body.style.height = "100vh";
+          document.body.style.overflow = "hidden";
         } else {
-          document.body.classList.remove("prevent-scroll");
-          document.body.classList.add("reset-scroll");
+          document.body.style.height = "initial";
+          document.body.style.overflow = "scroll";
         }
       }
     }
@@ -74,15 +88,5 @@
   font-size: 10px;
   top: -7px;
   left: 1px;
-}
-
-.prevent-scroll {
-  height: 100vh;
-  overflow: hidden;
-}
-
-.reset-scroll {
-  height: initial;
-  overflow: initial;
 }
 </style>

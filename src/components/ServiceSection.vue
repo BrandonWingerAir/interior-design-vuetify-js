@@ -2,7 +2,7 @@
   <div class="text-center mt-4">
     <h2>What We Do</h2>
     <div style="width: 120px; margin: 0 auto;">
-      <v-slider v-model="slider2" color="#d7ccc8"></v-slider>
+      <v-slider v-model="sliderIcon" color="#d7ccc8"></v-slider>
     </div>
   </div>
 
@@ -54,7 +54,11 @@
 
 <script>
   export default {
-    
+    setup() {
+      return {
+        sliderIcon: 50,
+      }
+    }
   }
 </script>
 

@@ -33,7 +33,6 @@
   export default {
     setup() {
       return {
-        slider2: 50,
         items: [
           {
             img: "room-1.jpg",

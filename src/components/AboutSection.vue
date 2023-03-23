@@ -59,4 +59,47 @@
   padding: 50px 200px 0;
   background-color: #f5f5f5;
 }
+
+@media only screen and (max-width: 1376px) {
+  .about-container {
+    padding: 50px 50px 0;
+  }
+}
+
+@media only screen and (max-width: 1076px) {
+  .about-container {
+    height: 485px;
+  }
+}
+
+@media only screen and (max-width: 903px) {
+  .about-container {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 776px) {
+  .about-container {
+    padding: 50px 30px 0;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .about-container {
+    padding: 50px 25px 0;
+    height: 540px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .about-container {
+    height: 1230px;
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .about-container {
+    height: 1290px;
+  }
+}
 </style>

@@ -2,14 +2,14 @@
   <v-col cols="12" class="mt-16">
     <div>
       <v-row>
-        <v-col cols="12" sm="6">
+        <v-col cols="12" md="6" order="2" order-md="1" class="mt-8 mt-md-0">
           <div class="circle-shape">
             <v-img src="plant.png" max-height="400" class="intro-icon-position"></v-img>
           </div>
         </v-col>
 
-        <v-col cols="12" sm="6" class="pr-12">
-          <h5 class="mt-16 text-uppercase">Designs</h5>
+        <v-col cols="12" md="6" order="1" order-md="2" class="pr-12 pl-12 pl-md-0 mb-16 mb-md-0">
+          <h5 class="mt-md-16 text-uppercase">Designs</h5>
 
           <div style="width: 120px; margin-left: -8px;">
             <v-slider v-model="sliderIcon" color="#d7ccc8"></v-slider>

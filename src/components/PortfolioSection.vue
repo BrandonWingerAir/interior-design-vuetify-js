@@ -1,6 +1,6 @@
 <template>
   <v-col cols="12" sm="12">
-    <div class="d-flex justify-center mb-6">
+    <div class="d-none d-sm-flex justify-center mb-6">
       <v-btn color="#d7ccc8" class="mr-2">Homes</v-btn>
       <v-btn class="mr-2" variant="tonal">Offices</v-btn>
       <v-btn class="mr-2" variant="tonal">Patios</v-btn>
@@ -61,5 +61,35 @@
 <style scoped>
 .imgHover {
   padding: 0 200px;
+}
+
+@media only screen and (max-width: 1149px) {
+  .imgHover {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .imgHover {
+    padding: 0 75px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .imgHover {
+    padding: 0 65px;
+  }
+}
+
+@media only screen and (max-width: 448px) {
+  .imgHover {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 353px) {
+  .imgHover {
+    padding: 0 35px;
+  }
 }
 </style>

@@ -6,8 +6,8 @@
     </div>
   </div>
 
-  <v-col cols="12" id="services">
-    <div id="project">
+  <v-col cols="12" id="services" class="px-0">
+    <div>
       <v-row>
         <v-col cols="12">
           <div class="block">
@@ -76,5 +76,27 @@
 
 .icon-pad {
   padding-right: 2px;
+}
+
+@media only screen and (max-width: 691px) {
+  .block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 531px) {
+  #services {
+    height: 835px;
+  }
+
+  .block {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 </style>

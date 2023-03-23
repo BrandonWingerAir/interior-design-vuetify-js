@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="black" dark flat class="px-12">
+  <v-app-bar app color="black" dark flat class="px-0 px-sm-4 px-lg-12">
     <v-btn @click="reloadPage" class="text-none">
       <v-icon color="#8d6e63" left class="mb-1">fas fa-lightbulb</v-icon>
       <span class="main-logo-text">in<strong>Designs</strong><span class="copyright-sign">&copy;</span></span>
@@ -7,13 +7,13 @@
     <v-spacer></v-spacer>
     
     <!-- Main Navbar -->
-    <v-btn v-for="item in items" v-bind:key=item text @click="scroll(item)" class="d-sm-block d-none">
+    <v-btn v-for="item in items" v-bind:key=item text @click="scroll(item)" class="mx-sm-n1 d-sm-block d-none">
       {{ item }}
     </v-btn>
 
     <!-- Mobile Menu Icons -->
-    <v-app-bar-nav-icon v-if="!drawer" @click="menuToggle()" class="d-flex d-sm-none"/>
-    <v-btn v-else icon="fas fa-close" @click="menuToggle()" class="d-flex d-sm-none"/>
+    <v-app-bar-nav-icon v-if="!drawer" @click="menuToggle()" class="d-flex d-sm-none mr-5"/>
+    <v-btn v-else icon="fas fa-close" @click="menuToggle()" class="d-flex d-sm-none mr-5"/>
   </v-app-bar>
 
   <!-- Mobile Navbar -->
@@ -88,5 +88,9 @@
   font-size: 10px;
   top: -7px;
   left: 1px;
+}
+
+.v-list-item-title {
+  font-size: 14px !important;
 }
 </style>

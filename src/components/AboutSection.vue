@@ -7,7 +7,7 @@
             <v-img src="dining-room.jpg" height="200px" cover></v-img>
             <v-card-title>Modern</v-card-title>
             <v-card-subtitle class="text-uppercase">
-              Decoration
+              Decorations
             </v-card-subtitle>
             <v-card-text>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aut pariatur? Aliquid omnis harum eius facilis asperiores?

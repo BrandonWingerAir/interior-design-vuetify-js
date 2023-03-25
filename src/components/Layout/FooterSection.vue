@@ -13,7 +13,7 @@
           - {{ new Date().getFullYear() }}
         </span>
         <hr width="150px" class="mx-auto my-2" color="#e0e0e0">
-        <strong>Website by Brandon Winger-Air | All Rights Reserved</strong>
+        <strong>Website </strong>by<strong>Brandon Winger-Air |</strong> All Rights Reserved
       </v-card-text>
     </v-card>
   </v-footer>
@@ -36,7 +36,7 @@
 
 .copyright-sign {
   position: relative;
-  font-size: 11px;
+  font-size: 10px;
   top: -5px;
 }
 

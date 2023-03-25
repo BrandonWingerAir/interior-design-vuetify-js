@@ -1,6 +1,6 @@
 <template>
-  <v-col cols="12" sm="12">
-    <div class="d-none d-sm-flex justify-center mb-6">
+  <v-col cols="12" sm="12" class="px-4 px-sm-3">
+    <div class="d-flex justify-center mb-6 overflow-x-auto mobile-justify">
       <v-btn 
         :color="category == 'homes' ? '#d7ccc8' : null" 
         :variant="category == 'homes' ? 'elevated' : 'tonal'"
@@ -246,6 +246,12 @@
 @media only screen and (max-width: 599px) {
   .imgHover {
     padding: 0 75px;
+  }
+}
+
+@media only screen and (max-width: 563px) {
+  .mobile-justify {
+    justify-content: left !important;
   }
 }
 

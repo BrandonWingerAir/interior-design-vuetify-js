@@ -5,7 +5,7 @@
         <div style="position: relative" class="mt-7 pt-0 mt-sm-16 pt-sm-4">
           <h1 class="text-grey">Interior</h1>
           <h1 class="text-white mt-n2 mb-sm-1">Decoration</h1>
-          <span class="text-grey text-uppercase hero-desc">Room Designs</span>
+          <span class="text-grey text-uppercase hero-desc">Room Design</span>
           <br>
           <v-btn tile dark color="#8d6e63" class="mt-sm-8 hero-btn" variant="outlined">Get A Quote</v-btn>
         </div>

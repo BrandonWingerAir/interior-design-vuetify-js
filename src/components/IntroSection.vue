@@ -29,7 +29,7 @@
           </p>
 
           <v-btn tile dark color="#d7ccc8" class="mt-4">
-            Download Brochure
+            View Projects
           </v-btn>
         </v-col>
       </v-row>

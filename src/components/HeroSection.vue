@@ -7,7 +7,7 @@
           <h1 class="text-white mt-n2 mb-sm-1">Decoration</h1>
           <span class="text-grey text-uppercase hero-desc">Room Design</span>
           <br>
-          <v-btn tile dark color="#8d6e63" class="mt-sm-8 hero-btn" variant="outlined">Get A Quote</v-btn>
+          <v-btn tile dark color="#8d6e63" class="mt-sm-8 hero-btn" variant="outlined" @click="scroll('contact')">Get A Quote</v-btn>
         </div>
       </v-col>
       <v-col sm="2" cols="12">
@@ -30,7 +30,7 @@
       scroll(refName) {
         const element = document.getElementById(refName);
         element.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start", });
-      },
+      }
     }
   }
 </script>

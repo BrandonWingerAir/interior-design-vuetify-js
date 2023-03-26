@@ -1,6 +1,6 @@
 <template>
   <v-col cols="12" sm="12" class="px-4 px-sm-3">
-    <div class="d-flex justify-center mb-6 overflow-x-auto mobile-justify">
+    <div class="d-flex justify-center mb-6 overflow-x-auto categories-mobile">
       <v-btn 
         :color="category == 'homes' ? '#d7ccc8' : null" 
         :variant="category == 'homes' ? 'elevated' : 'tonal'"
@@ -283,8 +283,15 @@
 }
 
 @media only screen and (max-width: 563px) {
-  .mobile-justify {
+  .disable-scrollbars::-webkit-scrollbar {
+    background: transparent; /* Chrome/Safari/Webkit */
+    width: 0px;
+  }
+  
+  .categories-mobile {
     justify-content: left !important;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
   }
 
   .v-overlay__content .v-img {

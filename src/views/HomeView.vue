@@ -12,6 +12,10 @@
     </v-container>
 
     <FooterSection/>
+
+    <v-btn id="top-btn" class="rounded-0" color="black" @click="scroll('home-nav')">
+      <v-icon left class="mb-1">fa-solid fa-angle-up</v-icon>
+    </v-btn>
   </v-app>
 </template>
 
@@ -41,7 +45,31 @@ export default defineComponent({
     AboutSection,
     ContactSection,
     FooterSection,
-  }
+  },
+  methods: {
+    handleScroll() {
+      const topBtn = document.getElementById('top-btn');
+
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        topBtn.style.opacity = "100%";
+        topBtn.style.cursor = "pointer";
+      } else {
+        topBtn.style.opacity = "0";
+        topBtn.style.cursor = "initial";
+      }
+    },
+    scroll(refName) {
+      const element = document.getElementById(refName);
+      element.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start", });
+    },
+  },
+  mounted() {
+      window.addEventListener('scroll', this.handleScroll);
+    },
+
+    beforeUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
 });
 </script>
 
@@ -56,5 +84,17 @@ export default defineComponent({
   vertical-align: middle;
   text-align: center;
   margin-right: 8px;
+}
+
+#top-btn {
+  cursor: initial;
+  opacity: 0;
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  z-index: 99;
+  transition: 0.75s all ease-in-out;
+	-moz-transition: 0.75s all ease-in-out;
+	-webkit-transition: 0.75s all ease-in-out;
 }
 </style>

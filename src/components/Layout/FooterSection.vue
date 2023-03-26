@@ -7,13 +7,13 @@
         <v-btn class="mx-4 icon-bot-pad" icon="fab fa-facebook" variant="plain" color="white"/>
         <v-btn class="mx-4 icon-bot-pad" icon="fa-brands fa-instagram" variant="plain" color="white"/>
       </v-card-text>
-      <v-card-text class="text-white">
+      <v-card-text class="text-white" id="footer-bottom">
         <span class="logo-line">
           in<strong>Designs</strong><span class="copyright-sign">&copy;</span>
           - {{ new Date().getFullYear() }}
         </span>
         <hr width="150px" class="mx-auto my-2" color="#e0e0e0">
-        <strong>Website </strong>by<strong>Brandon Winger-Air |</strong> All Rights Reserved
+        Website by Brandon Winger-Air <strong>|</strong> All Rights Reserved
       </v-card-text>
     </v-card>
   </v-footer>

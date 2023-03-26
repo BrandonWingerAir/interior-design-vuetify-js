@@ -28,7 +28,7 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo dignissimos possimus voluptates, beatae nobis blanditiis repellendus numquam, eum perferendis aliquid dolorum sint voluptatum doloremque fuga, voluptatem fugiat illum tenetur aut.
           </p>
 
-          <v-btn tile dark color="#d7ccc8" class="mt-4">
+          <v-btn tile dark color="#d7ccc8" class="mt-4" @click="scroll('portfolio')">
             View Projects
           </v-btn>
         </v-col>
@@ -42,6 +42,12 @@
     setup() {
       return {
         sliderIcon: 50,
+      }
+    },
+    methods: {
+      scroll(refName) {
+        const element = document.getElementById(refName);
+        element.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start", });
       }
     }
   }

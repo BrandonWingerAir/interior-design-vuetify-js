@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="black" dark flat class="px-0 px-sm-4 px-lg-12">
+  <v-app-bar app color="black" dark flat class="px-0 px-sm-4 px-lg-12" id="home-nav">
     <v-btn @click="reloadPage" class="text-none">
       <v-icon color="#8d6e63" left class="mb-1">fas fa-lightbulb</v-icon>
       <span class="main-logo-text">in<strong>Designs</strong><span class="copyright-sign">&copy;</span></span>

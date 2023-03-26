@@ -10,7 +10,7 @@
         </v-col>
 
         <v-col cols="12" md="4" class="position-relative">
-          <v-btn color="#bcaaa4" class="mt-12 hire-btn">
+          <v-btn color="#bcaaa4" class="mt-12 hire-btn" @click="scroll('footer-bottom')">
             Get Started
           </v-btn>
         </v-col>
@@ -68,7 +68,12 @@
 
 <script>
   export default {
-    
+    methods: {
+      scroll(refName) {
+        const element = document.getElementById(refName);
+        element.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start", });
+      }
+    }
   }
 </script>
 

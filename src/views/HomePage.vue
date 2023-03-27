@@ -35,7 +35,7 @@ import AboutSection from '../components/AboutSection.vue';
 import ContactSection from '../components/ContactSection.vue';
 
 export default defineComponent({
-  name: 'HomeView',
+  name: 'HomePage',
   components: {
     NavbarSection,
     HeroSection,

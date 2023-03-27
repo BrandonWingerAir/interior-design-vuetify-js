@@ -1,59 +1,11 @@
 <template>
   <v-col cols="12" class="imgHover" id="portfolio">
-    <v-row v-if="category == 'homes'" class="fill-height" align="center" justify="center">
-      <template v-for="project in projects.homes" :key="project.img">
+    <v-row v-for="categoryImages in renderCategory()" :key="categoryImages"  class="fill-height" align="center" justify="center">
+      <template v-for="galleryImg in categoryImages" :key="galleryImg">
         <v-col cols="12" md="4">
           <v-hover v-slot="{isHovering, props}">
-            <v-card :elevation="isHovering ? 12: 2" :class="{'on-hover': isHovering}" v-bind="props">
-              <v-img :src="project.img" height="225px" cover @click="selectedImg = project.img"></v-img>
-            </v-card>
-          </v-hover>
-        </v-col>
-      </template>
-    </v-row>
-
-    <v-row v-if="category == 'offices'" class="fill-height" align="center" justify="center">
-      <template v-for="project in projects.offices" :key="project.img">
-        <v-col cols="12" md="4">
-          <v-hover v-slot="{isHovering, props}">
-            <v-card :elevation="isHovering ? 12: 2" :class="{'on-hover': isHovering}" v-bind="props">
-              <v-img :src="project.img" height="225px" cover @click="selectedImg = project.img"></v-img>
-            </v-card>
-          </v-hover>
-        </v-col>
-      </template>
-    </v-row>
-
-    <v-row v-if="category == 'bedrooms'" class="fill-height" align="center" justify="center">
-      <template v-for="project in projects.bedrooms" :key="project.img">
-        <v-col cols="12" md="4">
-          <v-hover v-slot="{isHovering, props}">
-            <v-card :elevation="isHovering ? 12: 2" :class="{'on-hover': isHovering}" v-bind="props">
-              <v-img :src="project.img" height="225px" cover @click="selectedImg = project.img"></v-img>
-            </v-card>
-          </v-hover>
-        </v-col>
-      </template>
-    </v-row>
-
-    <v-row v-if="category == 'kitchens'" class="fill-height" align="center" justify="center">
-      <template v-for="project in projects.kitchens" :key="project.img">
-        <v-col cols="12" md="4">
-          <v-hover v-slot="{isHovering, props}">
-            <v-card :elevation="isHovering ? 12: 2" :class="{'on-hover': isHovering}" v-bind="props">
-              <v-img :src="project.img" height="225px" cover @click="selectedImg = project.img"></v-img>
-            </v-card>
-          </v-hover>
-        </v-col>
-      </template>
-    </v-row>
-
-    <v-row v-if="category == 'patios'" class="fill-height" align="center" justify="center">
-      <template v-for="project in projects.patios" :key="project.img">
-        <v-col cols="12" md="4">
-          <v-hover v-slot="{isHovering, props}">
-            <v-card :elevation="isHovering ? 12: 2" :class="{'on-hover': isHovering}" v-bind="props">
-              <v-img :src="project.img" height="225px" cover @click="selectedImg = project.img"></v-img>
+            <v-card :key="galleryImg" :elevation="isHovering ? 12 : 2" :class="{'on-hover': isHovering}" v-bind="props">
+              <v-img :src="galleryImg.img" height="225px" cover @click="selectedImg = galleryImg.img"></v-img>
             </v-card>
           </v-hover>
         </v-col>
@@ -78,7 +30,8 @@ import gallery from "./gallery.json";
 export default {
   data() {
     return {
-      selectedImg: null
+      selectedImg: null,
+      selectedImages: {}
     }
   },
   props: {
@@ -87,6 +40,11 @@ export default {
   setup() {
     return {
       projects: gallery
+    }
+  },
+  methods: {
+    renderCategory() {
+      return Object.assign({}, { [this.category] : this.projects[this.category]});
     }
   }
 }
@@ -141,12 +99,6 @@ export default {
   .disable-scrollbars::-webkit-scrollbar {
     background: transparent; /* Chrome/Safari/Webkit */
     width: 0px;
-  }
-  
-  .categories-mobile {
-    justify-content: left !important;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE 10+ */
   }
 
   .v-overlay__content .v-img {

@@ -73,122 +73,23 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        selectedImg: null
-      }
-    },
-    props: {
-      category: String
-    },
-    setup() {
-      return {
-        projects: {
-          homes: [
-            {
-              img: "room-1.jpg"
-            },
-            {
-              img: "room-2.jpg"
-            },
-            {
-              img: "room-3.jpg"
-            },
-            {
-              img: "room-4.jpg"
-            },
-            {
-              img: "room-5.jpg"
-            },
-            {
-              img: "room-6.jpg"
-            }
-          ],
-          offices: [
-            {
-              img: "office-1.jpg"
-            },
-            {
-              img: "office-2.jpg"
-            },
-            {
-              img: "office-3.jpg"
-            },
-            {
-              img: "office-4.jpg"
-            },
-            {
-              img: "office-5.jpg"
-            },
-            {
-              img: "office-6.jpg"
-            }
-          ],
-          bedrooms: [
-            {
-              img: "bedroom-1.jpg"
-            },
-            {
-              img: "bedroom-2.jpg"
-            },
-            {
-              img: "bedroom-3.jpg"
-            },
-            {
-              img: "bedroom-4.jpg"
-            },
-            {
-              img: "bedroom-5.jpg"
-            },
-            {
-              img: "bedroom-6.jpg"
-            }
-          ],
-          kitchens: [
-            {
-              img: "kitchen-1.jpg"
-            },
-            {
-              img: "kitchen-2.jpg"
-            },
-            {
-              img: "kitchen-3.jpg"
-            },
-            {
-              img: "kitchen-4.jpg"
-            },
-            {
-              img: "kitchen-5.jpg"
-            },
-            {
-              img: "kitchen-6.jpg"
-            }
-          ],
-          patios: [
-            {
-              img: "patio-1.jpg"
-            },
-            {
-              img: "patio-2.jpg"
-            },
-            {
-              img: "patio-3.jpg"
-            },
-            {
-              img: "patio-4.jpg"
-            },
-            {
-              img: "patio-5.jpg"
-            },
-            {
-              img: "patio-6.jpg"
-            }
-          ]
-        }
-      }
+import gallery from "./gallery.json";
+
+export default {
+  data() {
+    return {
+      selectedImg: null
+    }
+  },
+  props: {
+    category: String
+  },
+  setup() {
+    return {
+      projects: gallery
     }
   }
+}
 </script>
 
 <style scoped>

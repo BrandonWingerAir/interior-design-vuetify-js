@@ -2,47 +2,13 @@
   <v-col cols="12" sm="12" class="px-4 px-sm-3">
     <div class="d-flex justify-center mb-6 overflow-x-auto categories-mobile">
       <v-btn 
-        :color="category == 'homes' ? '#d7ccc8' : null" 
-        :variant="category == 'homes' ? 'elevated' : 'tonal'"
+        v-for="categoryName in categories" :key="categoryName"
+        :color="category == categoryName ? '#d7ccc8' : null" 
+        :variant="category == categoryName ? 'elevated' : 'tonal'"
         class="mr-2" 
-        @click="category = 'homes'"
+        @click="category = categoryName"
       >
-        Homes
-      </v-btn>
-
-      <v-btn
-        :color="category == 'offices' ? '#d7ccc8' : null" 
-        :variant="category == 'offices' ? 'elevated' : 'tonal'"
-        class="mr-2" 
-        @click="category = 'offices'"
-      >
-        Offices
-      </v-btn>
-
-      <v-btn
-        :color="category == 'bedrooms' ? '#d7ccc8' : null" 
-        :variant="category == 'bedrooms' ? 'elevated' : 'tonal'"
-        class="mr-2" 
-        @click="category = 'bedrooms'"
-      >
-        Bedrooms
-      </v-btn>
-
-      <v-btn
-        :color="category == 'kitchens' ? '#d7ccc8' : null" 
-        :variant="category == 'kitchens' ? 'elevated' : 'tonal'"
-        class="mr-2" 
-        @click="category = 'kitchens'"
-      >
-        Kitchens
-      </v-btn>
-      
-      <v-btn
-        :color="category == 'patios' ? '#d7ccc8' : null" 
-        :variant="category == 'patios' ? 'elevated' : 'tonal'"
-        @click="category = 'patios'"
-      >
-        Patios
+        {{categoryName}}
       </v-btn>
     </div>
   </v-col>
@@ -51,7 +17,7 @@
 </template>
 
 <script>
-import PortfolioGallery from '../components/Gallery/PortfolioGallery.vue';
+import PortfolioGallery from './Portfolio/PortfolioGallery.vue';
 
 export default {
   components: {
@@ -60,6 +26,11 @@ export default {
   data() {
     return {
       category: 'homes'
+    }
+  },
+  setup() {
+    return {
+      categories: ['homes', 'offices', 'bedrooms', 'kitchens', 'patios']
     }
   }
 }

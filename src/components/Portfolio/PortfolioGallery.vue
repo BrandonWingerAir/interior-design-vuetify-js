@@ -30,8 +30,7 @@ import gallery from "./gallery.json";
 export default {
   data() {
     return {
-      selectedImg: null,
-      selectedImages: {}
+      selectedImg: null
     }
   },
   props: {

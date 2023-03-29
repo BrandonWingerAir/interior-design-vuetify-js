@@ -13,7 +13,7 @@
 
     <FooterSection/>
 
-    <v-btn id="top-btn" class="rounded-0" color="black" @click="scroll('home-nav')">
+    <v-btn id="top-btn" class="rounded-0 rounded-ts rounded-bs px-4" color="black" @click="scroll('home-nav')">
       <v-icon left class="mb-1">fa-solid fa-angle-up</v-icon>
     </v-btn>
   </v-app>
@@ -93,6 +93,7 @@ export default defineComponent({
   bottom: 50px;
   right: 0;
   z-index: 99;
+  height: 36px;
   transition: 0.75s all ease-in-out;
 	-moz-transition: 0.75s all ease-in-out;
 	-webkit-transition: 0.75s all ease-in-out;

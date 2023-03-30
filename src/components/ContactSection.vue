@@ -81,6 +81,9 @@
             variant="outlined"
           />
 
+          <div class="g-recaptcha" data-sitekey="6Lc3UEMlAAAAAEBZJGycrbC1_SMvDZ80JAcrsHH7"></div>
+          <br/>
+
           <v-btn type="submit" color="#d7ccc8" class="mt-2">Submit</v-btn>
         </form>
       </v-col>

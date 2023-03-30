@@ -37,7 +37,7 @@
           <v-btn icon="fas fa-envelope" class="mt-8 mb-3 icon-btn-position" variant="outlined"/>
           <br>
           <span class="text-caption">
-            brandon.air.web@gmail.com
+            indesigns.decor@gmail.com
           </span>
         </div>
       </v-col>
@@ -50,31 +50,79 @@
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur a laboriosam debitis repudiandae consequatur. Assumenda, molestiae pariatur eos quibusdam beatae, consequatur eius aliquam sequi eveniet natus quaerat accusamus aspernatur.
         </span>
 
-        <v-row class="mt-10">
-          <v-col cols="12" sm="6">
-            <v-text-field label="Name" persistent-hint variant="outlined"></v-text-field>
-          </v-col>
-          <v-col cols="12" sm="6">
-            <v-text-field label="Phone Number" persistent-hint variant="outlined"></v-text-field>
-          </v-col>
-        </v-row>
+        <form @submit.prevent="sendEmail">
+          <v-row class="mt-10">
+            <v-col cols="12" sm="6">
+              <v-text-field 
+                label="Your Name" 
+                v-model="name"
+                name="name"
+                persistent-hint 
+                variant="outlined"
+              />
+            </v-col>
+            
+            <v-col cols="12" sm="6">
+              <v-text-field 
+                label="Email Address" 
+                v-model="email"
+                name="email"
+                persistent-hint 
+                variant="outlined"
+              />
+            </v-col>
+          </v-row>
+  
+          <v-textarea 
+            label="Message" 
+            v-model="message"
+            name="message"
+            persistant-hint 
+            variant="outlined"
+          />
 
-        <v-textarea label="Message" persistant-hint variant="outlined"></v-textarea>
-        <v-btn color="#d7ccc8" class="mt-2">Submit</v-btn>
+          <v-btn type="submit" color="#d7ccc8" class="mt-2">Submit</v-btn>
+        </form>
       </v-col>
     </v-row>
   </v-col>
 </template>
 
 <script>
-  export default {
-    methods: {
-      scroll(refName) {
-        const element = document.getElementById(refName);
-        element.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start", });
+import emailjs from 'emailjs-com';
+
+export default {
+  data() {
+    return {
+      name: '',
+      email: '',
+      message: ''
+    }
+  },
+  methods: {
+    scroll(refName) {
+      const element = document.getElementById(refName);
+      element.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start", });
+    },
+    sendEmail(e) {
+      try {
+        emailjs.sendForm('service_zpa2qg5', 'template_eg5bpmd', e.target,
+        'WTyoY36g3JpgNFP0D', {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        })
+
+      } catch(error) {
+          console.log({error})
       }
+      // Reset form field
+      this.name = ''
+      this.email = ''
+      this.message = ''
     }
   }
+}
 </script>
 
 <style scoped>

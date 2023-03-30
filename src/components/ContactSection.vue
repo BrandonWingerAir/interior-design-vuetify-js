@@ -24,17 +24,17 @@
         <div class="block">
           <h1>Based In</h1>
           <hr>
-          <v-btn icon="fas fa-map-marker-alt" class="mt-8 mb-3 icon-btn-position" variant="outlined"/>
+          <v-btn icon="fas fa-map-marker-alt" class="mt-8 mb-3 map-icon-pad icon-btn-pad" variant="outlined"/>
           <br>
           <span class="text-caption">Ontario, Canada</span>
           <br>
-          <v-btn icon="fas fa-phone-alt" class="mt-8 mb-3 icon-btn-position" variant="outlined"/>
+          <v-btn icon="fas fa-phone-alt" class="mt-8 mb-3 pb-1 icon-btn-pad" variant="outlined"/>
           <br>
           <span class="text-caption">
             (888) 888-8888
           </span>
           <br>
-          <v-btn icon="fas fa-envelope" class="mt-8 mb-3 icon-btn-position" variant="outlined"/>
+          <v-btn icon="fas fa-envelope" class="mt-8 mb-3 pb-1" variant="outlined"/>
           <br>
           <span class="text-caption">
             indesigns.decor@gmail.com
@@ -142,9 +142,14 @@ export default {
   right: 16px;
 }
 
-.icon-btn-position {
+.icon-btn-pad {
   padding-right: 1px;
   padding-bottom: 2px;
+}
+
+.map-icon-pad {
+  padding-bottom: 3px;
+  padding-left: 2px;
 }
 
 .contact-box {

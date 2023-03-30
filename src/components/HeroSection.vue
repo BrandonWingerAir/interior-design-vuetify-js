@@ -17,7 +17,7 @@
       </v-col>
       <v-col sm="5" cols="12">
         <div style="position: relative; z-index: 9999;" class="mt-12 hero-img">
-          <v-img src="chair.png" contain max-height="285"></v-img>
+          <v-img src="images/chair.png" contain max-height="285"></v-img>
         </div>
       </v-col>
     </v-row>

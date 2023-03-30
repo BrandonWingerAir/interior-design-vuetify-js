@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="12" sm="4">
           <v-card class="mx-auto" max-width="344">
-            <v-img src="dining-room.jpg" height="200px" cover></v-img>
+            <v-img src="images/dining-room.jpg" height="200px" cover></v-img>
             <v-card-title>Modern</v-card-title>
             <v-card-subtitle class="text-uppercase">
               Decorations
@@ -17,7 +17,7 @@
 
         <v-col cols="12" sm="4">
           <v-card class="mx-auto" max-width="344">
-            <v-img src="business-office.jpg" height="200px" cover></v-img>
+            <v-img src="images/business-office.jpg" height="200px" cover></v-img>
             <v-card-title>Professional</v-card-title>
             <v-card-subtitle class="text-uppercase">
               Business Spaces
@@ -30,7 +30,7 @@
 
         <v-col cols="12" sm="4">
           <v-card class="mx-auto" max-width="344">
-            <v-img src="holiday-decorations.jpg" height="200px" cover></v-img>
+            <v-img src="images/holiday-decorations.jpg" height="200px" cover></v-img>
             <v-card-title>Traditional</v-card-title>
             <v-card-subtitle class="text-uppercase">
               DESIGN PRACTICE

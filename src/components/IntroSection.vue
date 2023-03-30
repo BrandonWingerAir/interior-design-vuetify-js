@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="12" md="6" order="2" order-md="1" class="mt-8 mt-md-0">
           <div class="circle-shape">
-            <v-img src="plant.png" max-height="400" class="intro-icon-position"></v-img>
+            <v-img src="images/plant.png" max-height="400" class="intro-icon-position"></v-img>
           </div>
         </v-col>
 

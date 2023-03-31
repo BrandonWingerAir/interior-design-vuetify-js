@@ -19,13 +19,13 @@
           <h4>OUTDOOR</h4>
 
           <p class="text-grey mt-2">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vitae esse nostrum impedit necessitatibus dolore, magnam ipsam id eos possimus ex nisi. Distinctio ipsam deserunt quas tempore, repudiandae aliquid corrupti.
+            Welcome to in<strong>Designs</strong><span class="copyright-sign">&copy;</span>, your ultimate destination for all your interior decor needs!
           </p>
 
           <br>
 
           <p class="text-grey">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo dignissimos possimus voluptates, beatae nobis blanditiis repellendus numquam, eum perferendis aliquid dolorum sint voluptatum doloremque fuga, voluptatem fugiat illum tenetur aut.
+            Whether you're looking to refresh a single room or revamp your entire home or office space, our team of expert designers will work hand-in-hand with you to bring your vision to life. With a keen eye for detail and a commitment to quality, we are here to turn your dreams into reality.
           </p>
 
           <v-btn tile dark color="#d7ccc8" class="mt-4" @click="scroll('portfolio')">

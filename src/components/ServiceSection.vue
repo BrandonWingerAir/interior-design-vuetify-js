@@ -14,11 +14,7 @@
             <v-btn icon="fa-solid fa-chair" color="#d7ccc8" class="text-white pb-1 icon-ml"></v-btn>
             <h3 class="ml-3 mt-4">Office Space</h3>
             <p class="text-grey ml-3 mt-4 text-caption">
-              Lorem ipsum dolor sit amet 
-              <br>
-              consectetur, adipisicing 
-              <br>
-              elit. Modi.
+              Revamp your office into an inspiring and productive environment.
             </p>
           </div>
           
@@ -26,11 +22,7 @@
             <v-btn icon="fas fa-house" color="#d7ccc8" class="text-white pb-1 pr-1 icon-ml"></v-btn>
             <h3 class="ml-3 mt-4">Home Space</h3>      
             <p class="text-grey ml-3 mt-4 text-caption">
-              Lorem ipsum dolor sit amet 
-              <br>
-              consectetur, adipisicing 
-              <br>
-              elit. Modi.
+              Design your living area into a stunning and comfortable home.
             </p>
           </div>
 
@@ -38,11 +30,7 @@
             <v-btn icon="fa-solid fa-spa" color="#d7ccc8" class="text-white icon-ml icon-pad"></v-btn>
             <h3 class="ml-3 mt-4">Outdoor Space</h3>
             <p class="text-grey ml-3 mt-4 text-caption">
-              Lorem ipsum dolor sit amet 
-              <br>
-              consectetur, adipisicing 
-              <br>
-              elit. Modi.
+              Grow your patio & yard into a stylish and inviting garden oasis.
             </p>
           </div>
         </v-col>
@@ -68,6 +56,15 @@
   height: 280px;
   text-align: center;
   padding: 2rem 2rem;
+}
+
+.block {
+  width: 240px;
+}
+
+p {
+  font-size: 14px !important;
+  line-height: 27px !important;
 }
 
 .icon-ml {

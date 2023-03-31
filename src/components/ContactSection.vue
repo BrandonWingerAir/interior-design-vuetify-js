@@ -5,7 +5,7 @@
         <v-col cols="12" md="8" class="pr-16">
           <h1 class="mt-9">Hire us for your next redesign</h1>
           <p class="text-grey pr-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore aliquid laudantium, atque cumque ad sapiente! Asperiores ullam harum eos illo?
+            Experienced interior decor services, for both residential and commercial properties.
           </p>
         </v-col>
 
@@ -44,10 +44,10 @@
 
       <!-- Contact Box -->
       <v-col cols="12" lg="9" class="contact-box">
-        <h1 class="mt-8">Send your message</h1>
+        <h1 class="mt-8">Send us a message:</h1>
         <divider></divider>
         <span class="text-caption">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur a laboriosam debitis repudiandae consequatur. Assumenda, molestiae pariatur eos quibusdam beatae, consequatur eius aliquam sequi eveniet natus quaerat accusamus aspernatur.
+          Let us know your requirements & budget
         </span>
 
         <form @submit.prevent="sendEmail">
@@ -154,6 +154,14 @@ export default {
 
 .contact-box {
   padding-right: 170px;
+}
+
+.text-caption {
+  font-size: 13px !important;
+}
+
+.contact-box .text-caption {
+  font-size: 14px !important;
 }
 
 @media only screen and (max-width: 1279px) {

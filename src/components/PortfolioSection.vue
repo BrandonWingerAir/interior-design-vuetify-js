@@ -1,6 +1,6 @@
 <template>
   <v-col cols="12" sm="12" class="px-4 px-sm-3">
-    <div class="d-flex justify-center mb-6 overflow-x-auto categories-mobile">
+    <div class="d-flex justify-center my-6 overflow-x-auto categories-mobile">
       <v-btn 
         v-for="categoryName in categories" :key="categoryName"
         :color="category == categoryName ? '#d7ccc8' : null" 

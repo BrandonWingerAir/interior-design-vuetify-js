@@ -7,10 +7,10 @@
             <v-img src="images/dining-room.jpg" height="200px" cover></v-img>
             <v-card-title>Modern</v-card-title>
             <v-card-subtitle class="text-uppercase">
-              Decorations
+              Decoration
             </v-card-subtitle>
             <v-card-text>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aut pariatur? Aliquid omnis harum eius facilis asperiores?
+              Compliment your home with our beautiful interior decorations and make it a place you love coming back to every day!
             </v-card-text>
           </v-card>
         </v-col>
@@ -23,7 +23,7 @@
               Business Spaces
             </v-card-subtitle>
             <v-card-text>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aut pariatur? Aliquid omnis harum eius facilis asperiores?
+              Update your office space into a functional and inspiring environment fit for professionals with ergonomics in mind.
             </v-card-text>
           </v-card>
         </v-col>
@@ -33,10 +33,10 @@
             <v-img src="images/holiday-decorations.jpg" height="200px" cover></v-img>
             <v-card-title>Traditional</v-card-title>
             <v-card-subtitle class="text-uppercase">
-              DESIGN PRACTICE
+              Design Practice
             </v-card-subtitle>
             <v-card-text>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aut pariatur? Aliquid omnis harum eius facilis asperiores?
+              Transform your home or apartment into a festive & cozy retreat with our traditional and holiday decor styles.
             </v-card-text>
           </v-card>
         </v-col>

@@ -10,7 +10,7 @@
     <div>
       <v-row>
         <v-col cols="12">
-          <div class="block">
+          <div class="block mx-auto">
             <v-btn icon="fa-solid fa-chair" color="#d7ccc8" class="text-white pb-1 icon-ml"></v-btn>
             <h3 class="ml-3 mt-4">Office Space</h3>
             <p class="text-grey ml-3 mt-4 text-caption">
@@ -18,7 +18,7 @@
             </p>
           </div>
           
-          <div class="block">
+          <div class="block mx-auto">
             <v-btn icon="fas fa-house" color="#d7ccc8" class="text-white pb-1 pr-1 icon-ml"></v-btn>
             <h3 class="ml-3 mt-4">Home Space</h3>      
             <p class="text-grey ml-3 mt-4 text-caption">
@@ -26,7 +26,7 @@
             </p>
           </div>
 
-          <div class="block">
+          <div class="block mx-auto">
             <v-btn icon="fa-solid fa-spa" color="#d7ccc8" class="text-white icon-ml icon-pad"></v-btn>
             <h3 class="ml-3 mt-4">Outdoor Space</h3>
             <p class="text-grey ml-3 mt-4 text-caption">
@@ -59,7 +59,7 @@
 }
 
 .block {
-  width: 240px;
+  width: 285px;
 }
 
 p {

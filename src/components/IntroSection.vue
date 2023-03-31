@@ -9,7 +9,7 @@
         </v-col>
 
         <v-col cols="12" md="6" order="1" order-md="2" class="pr-12 pl-12 pl-md-0 mb-16 mb-md-0">
-          <h5 class="mt-md-16 text-uppercase">Designs</h5>
+          <h5 class="mt-md-16 text-uppercase">Interior Decor</h5>
 
           <div style="width: 120px; margin-left: -8px;">
             <v-slider v-model="sliderIcon" color="#d7ccc8"></v-slider>
@@ -25,7 +25,7 @@
           <br>
 
           <p class="text-grey">
-            Whether you're looking to refresh a single room or revamp your entire home or office space, our team of expert designers will work hand-in-hand with you to bring your vision to life. With a keen eye for detail and a commitment to quality, we are here to turn your dreams into reality.
+            Whether you're looking to refresh a single room or revamp your entire home or office space, our team of designers will work hand-in-hand with you to bring your vision to life. With a keen eye for detail and a commitment to quality, we are here to turn your dreams into reality.
           </p>
 
           <v-btn tile dark color="#d7ccc8" class="mt-4" @click="scroll('portfolio')">

@@ -31,7 +31,7 @@
           <v-btn icon="fas fa-phone-alt" class="mt-8 mb-3 pb-1 icon-btn-pad" variant="outlined"/>
           <br>
           <span class="text-caption">
-            (888) 888-8888
+            Available soon
           </span>
           <br>
           <v-btn icon="fas fa-envelope" class="mt-8 mb-3 pb-1" variant="outlined"/>
@@ -59,6 +59,8 @@
                 name="name"
                 persistent-hint 
                 variant="outlined"
+                required
+                class="mb-n6"
               />
             </v-col>
             
@@ -69,6 +71,7 @@
                 name="email"
                 persistent-hint 
                 variant="outlined"
+                required
               />
             </v-col>
           </v-row>
@@ -79,6 +82,7 @@
             name="message"
             persistant-hint 
             variant="outlined"
+            required
           />
 
           <div class="g-recaptcha" data-sitekey="6Lc3UEMlAAAAAEBZJGycrbC1_SMvDZ80JAcrsHH7"></div>

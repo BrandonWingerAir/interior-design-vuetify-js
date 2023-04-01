@@ -12,24 +12,24 @@
         <v-col cols="12">
           <div class="block mx-auto">
             <v-btn icon="fa-solid fa-chair" color="#d7ccc8" class="text-white pb-1 icon-ml"></v-btn>
-            <h3 class="ml-3 mt-4">Office Space</h3>
-            <p class="text-grey ml-3 mt-4 text-caption">
+            <h3 class="mt-4">Office Space</h3>
+            <p class="text-grey mt-4 text-caption">
               Revamp your office into an inspiring and productive environment.
             </p>
           </div>
           
           <div class="block mx-auto">
             <v-btn icon="fas fa-house" color="#d7ccc8" class="text-white pb-1 pr-1 icon-ml"></v-btn>
-            <h3 class="ml-3 mt-4">Home Space</h3>      
-            <p class="text-grey ml-3 mt-4 text-caption">
+            <h3 class="mt-4">Home Space</h3>      
+            <p class="text-grey mt-4 text-caption">
               Design your living area into a stunning and comfortable home.
             </p>
           </div>
 
           <div class="block mx-auto">
             <v-btn icon="fa-solid fa-spa" color="#d7ccc8" class="text-white icon-ml icon-pad"></v-btn>
-            <h3 class="ml-3 mt-4">Outdoor Space</h3>
-            <p class="text-grey ml-3 mt-4 text-caption">
+            <h3 class="mt-4">Outdoor Space</h3>
+            <p class="text-grey mt-4 text-caption">
               Grow your patio & yard into a stylish and inviting garden oasis.
             </p>
           </div>

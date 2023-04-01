@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="12" md="6" order="2" order-md="1" class="mt-8 mt-md-0">
           <div class="circle-shape">
-            <v-img src="images/plant.png" max-height="400" class="intro-icon-position"></v-img>
+            <v-img src="images/plant.png" max-height="400" class="intro-img-position"></v-img>
           </div>
         </v-col>
 
@@ -64,8 +64,19 @@
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
-.intro-icon-position {
+.intro-img-position {
   bottom: 100px;
   left: 10px;
+}
+
+@media only screen and (max-width: 376px) {
+  .circle-shape {
+    width: 295px;
+  }
+
+  .intro-img-position {
+  bottom: 102px;
+  left: 5px;
+}
 }
 </style>

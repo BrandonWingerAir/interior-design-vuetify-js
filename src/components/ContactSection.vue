@@ -1,11 +1,11 @@
 <template>
   <v-col cols="12" class="px-0">
-    <div class="hire-banner">
+    <div class="hire-banner" max-height="fit-content">
       <v-row>
         <v-col cols="12" md="8" class="pr-16">
           <h1 class="mt-9">Hire us for your next redesign</h1>
           <p class="text-grey pr-4">
-            Experienced interior decor services, for both residential and commercial properties.
+            Interior decor services in both residential and commercial properties.
           </p>
         </v-col>
 
@@ -18,7 +18,7 @@
     </div>
   </v-col>
 
-  <v-col cols="12" id="contact" class="px-16">
+  <v-col cols="12" id="contact" class="px-10 px-sm-16">
     <v-row class="pl-lg-16">
       <v-col cols="12" lg="3" class="pl-lg-16 text-center">
         <div class="block">
@@ -31,7 +31,7 @@
           <v-btn icon="fas fa-phone-alt" class="mt-8 mb-3 pb-1 icon-btn-pad" variant="outlined"/>
           <br>
           <span class="text-caption">
-            Available soon
+            Available soon.
           </span>
           <br>
           <v-btn icon="fas fa-envelope" class="mt-8 mb-3 pb-1" variant="outlined"/>
@@ -50,7 +50,7 @@
           Let us know your requirements & budget
         </span>
 
-        <form @submit.prevent="sendEmail">
+        <form ref="form" @submit.prevent="sendEmail">
           <v-row class="mt-10">
             <v-col cols="12" sm="6">
               <v-text-field 
@@ -86,9 +86,26 @@
           />
 
           <div class="g-recaptcha" data-sitekey="6Lc3UEMlAAAAAEBZJGycrbC1_SMvDZ80JAcrsHH7"></div>
-          <br/>
 
-          <v-btn type="submit" color="#d7ccc8" class="mt-2">Submit</v-btn>
+          <v-alert
+            v-if="formSuccess"
+            color="success"
+            icon="$success"
+            text="Success: Message sent, a copy should be at your email."
+            class="mt-5"
+            width="max-content"
+          />
+
+          <v-alert
+            v-if="formError"
+            color="error"
+            icon="$error"
+            :text="errorText"
+            class="mt-5"
+            width="max-content"
+          />
+
+          <v-btn type="submit" color="#d7ccc8" class="mt-5 mb-1">Submit</v-btn>
         </form>
       </v-col>
     </v-row>
@@ -103,7 +120,10 @@ export default {
     return {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      formSuccess: false,
+      formError: false,
+      errorText: ''
     }
   },
   methods: {
@@ -111,22 +131,26 @@ export default {
       const element = document.getElementById(refName);
       element.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start", });
     },
-    sendEmail(e) {
-      try {
-        emailjs.sendForm('service_zpa2qg5', 'template_eg5bpmd', e.target,
-        'WTyoY36g3JpgNFP0D', {
-          name: this.name,
-          email: this.email,
-          message: this.message
-        })
+    sendEmail() {
+      emailjs.sendForm('service_zpa2qg5', 'template_eg5bpmd', this.$refs.form, 'WTyoY36g3JpgNFP0D')
+        .then(() => {
+          this.formError = false;
+          this.formSuccess = true;
+          
+          this.name = ''
+          this.email = ''
+          this.message = ''
+        }, (error) => {
+          this.formSuccess = false;
 
-      } catch(error) {
-          console.log({error})
-      }
-      // Reset form field
-      this.name = ''
-      this.email = ''
-      this.message = ''
+          if (error.text.indexOf("reCAPTCHA") >= 0) {
+            this.errorText = 'Error: Please verify reCAPTCHA'
+          } else {
+            this.errorText = 'Error: Message not sent, please try again.'
+          }
+          
+          this.formError = true
+        });
     }
   }
 }
@@ -135,8 +159,8 @@ export default {
 <style scoped>
 .hire-banner {
   width: 100%;
-  height: 200px;
-  padding: 0 14%;
+  height: fit-content;
+  padding: 0 14% 65px;
   background-color: #e9e9e9;
   margin-top: -24px;
 }
@@ -174,74 +198,10 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1186px) {
-  .hire-banner {
-    height: 225px;
-  }
-}
-
-@media only screen and (max-width: 1051px) {
-  .hire-banner {
-    height: 270px;
-  }
-}
-
-@media only screen and (max-width: 964px) {
-  .hire-banner {
-    height: 290px;
-  }
-}
-
 @media only screen and (max-width: 959px) {
-  .hire-banner {
-    height: 265px;
-  }
-
   .hire-btn {
     left: 10px;
     margin-top: 0 !important;
-  }
-}
-
-@media only screen and (max-width: 811px) {
-  .hire-banner {
-    height: 290px;
-  }
-}
-
-@media only screen and (max-width: 665px) {
-  .hire-banner {
-    padding: 0 9%;
-  }
-}
-
-@media only screen and (max-width: 583px) {
-  .hire-banner {
-    height: 335px;
-  }
-}
-
-@media only screen and (max-width: 531px) {
-  .hire-banner {
-    height: 360px;
-  }
-}
-
-@media only screen and (max-width: 433px) {
-  .hire-banner {
-    height: 380px;
-  }
-}
-
-@media only screen and (max-width: 365px) {
-  .hire-banner {
-    padding: 0 7%;
-  }
-}
-
-@media only screen and (max-width: 348px) {
-  .hire-banner {
-    height: 405px;
   }
 }
 </style>

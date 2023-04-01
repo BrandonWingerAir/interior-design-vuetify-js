@@ -1,11 +1,12 @@
 <template>
   <v-footer class="pa-0">
-    <v-card elevation="0" rounded="0" width="100%" class="bg-grey text-center">
-      <v-card-text>
+    <v-card elevation="0" rounded="0" width="100%" class="bg-grey text-center pb-3">
+      <v-card-text class="pb-0">
+        <v-btn class="mx-4 icon-bot-pad" icon="fas fa-lightbulb" variant="plain" color="white"/>
         <!-- <v-btn class="mx-4 icon-bot-pad" icon="fa-brands fa-pinterest" variant="plain" color="white"/> -->
-        <v-btn class="mx-4 icon-bot-pad" icon="fas fa-message" variant="plain" color="white"/>
-        <!-- <v-btn class="mx-4 icon-bot-pad" icon="fab fa-facebook" variant="plain" color="white"/>
-        <v-btn class="mx-4 icon-bot-pad" icon="fa-brands fa-instagram" variant="plain" color="white"/> -->
+        <!-- <v-btn class="mx-4 icon-bot-pad" icon="fas fa-message" variant="plain" color="white"/> -->
+        <!-- <v-btn class="mx-4 icon-bot-pad" icon="fab fa-facebook" variant="plain" color="white"/> -->
+        <!-- <v-btn class="mx-4 icon-bot-pad" icon="fa-brands fa-instagram" variant="plain" color="white"/> -->
       </v-card-text>
       <v-card-text class="text-white" id="footer-bottom">
         <span class="logo-line">

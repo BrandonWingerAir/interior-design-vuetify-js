@@ -1,15 +1,15 @@
 <template>
-  <div class="text-center mt-4">
+  <div class="text-center mt-5">
     <h2>What We Do</h2>
     <div style="width: 120px; margin: 0 auto;">
       <v-slider v-model="sliderIcon" color="#d7ccc8"></v-slider>
     </div>
   </div>
 
-  <v-col cols="12" id="services" class="px-0">
+  <v-col cols="12" id="services" class="px-0 pt-2">
     <div>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" class="pb-12">
           <div class="block mx-auto">
             <v-btn icon="fa-solid fa-chair" color="#d7ccc8" class="text-white pb-1 icon-ml"></v-btn>
             <h3 class="mt-4">Office Space</h3>
@@ -22,7 +22,7 @@
             <v-btn icon="fas fa-house" color="#d7ccc8" class="text-white pb-1 pr-1 icon-ml"></v-btn>
             <h3 class="mt-4">Home Space</h3>      
             <p class="text-grey mt-4 text-caption">
-              Design your living area into a stunning and comfortable home.
+              Uplift your living area into a stunning and comfortable home.
             </p>
           </div>
 

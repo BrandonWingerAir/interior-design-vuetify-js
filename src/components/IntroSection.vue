@@ -25,7 +25,7 @@
           <br>
 
           <p class="text-grey">
-            Whether you're looking to refresh a single room or revamp your entire home or office space, our team of designers will work hand-in-hand with you to bring your vision to life. With a keen eye for detail and a commitment to quality, we are here to turn your dreams into reality.
+            Whether you're looking to refresh a single room or setup your entire home or office space, our team of designers will work hand-in-hand with you to bring your vision to life. With a keen eye for detail and a commitment to quality, we are here to turn your dreams into reality.
           </p>
 
           <v-btn tile dark color="#d7ccc8" class="mt-4" @click="scroll('portfolio')">

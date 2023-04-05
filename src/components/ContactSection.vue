@@ -69,6 +69,7 @@
                 label="Email Address" 
                 v-model="email"
                 name="email"
+                type="email"
                 persistent-hint 
                 variant="outlined"
                 required
@@ -91,7 +92,7 @@
             v-if="formSuccess"
             color="success"
             icon="$success"
-            text="Success: Message sent, a copy should be at your email."
+            text="Success: Message sent!"
             class="mt-5"
             width="max-content"
           />
@@ -100,7 +101,7 @@
             v-if="formError"
             color="error"
             icon="$error"
-            :text="errorText"
+            text="Error: Sorry, please try again."
             class="mt-5"
             width="max-content"
           />

@@ -3,7 +3,7 @@
     <div class="hire-banner" max-height="fit-content">
       <v-row>
         <v-col cols="12" md="8" class="pr-16">
-          <h1 class="mt-9">Hire us for your next redesign</h1>
+          <h1 class="mt-1 mt-lg-9">Hire us for your next redesign</h1>
           <p class="text-grey pr-4">
             Interior decor services in both residential and commercial properties.
           </p>

@@ -36,7 +36,7 @@
               Design Practice
             </v-card-subtitle>
             <v-card-text>
-              Transform your home or apartment into a festive & cozy retreat with our traditional and holiday decor styles.
+              Transform your areas or apartment into a festive & cozy retreat with our traditional and holiday decor styles.
             </v-card-text>
           </v-card>
         </v-col>

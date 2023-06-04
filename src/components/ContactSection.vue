@@ -1,16 +1,16 @@
 <template>
   <v-col cols="12" class="px-0">
-    <div class="hire-banner" max-height="fit-content">
+    <div class="hire-banner pt-9 pb-12" max-height="fit-content">
       <v-row>
         <v-col cols="12" md="8" class="pr-16">
-          <h1 class="mt-1 mt-lg-9">Hire us for your next redesign</h1>
+          <h1>Hire us for your next redesign</h1>
           <p class="text-grey pr-4">
             Interior decor services in both residential and commercial properties.
           </p>
         </v-col>
 
-        <v-col cols="12" md="4" class="position-relative">
-          <v-btn color="#bcaaa4" class="mt-12 hire-btn" @click="scroll('footer-bottom')">
+        <v-col cols="12" md="4" class="position-relative mb-10">
+          <v-btn color="#bcaaa4" class="mt-7 hire-btn" @click="scroll('footer-bottom')">
             Get Started
           </v-btn>
         </v-col>
@@ -19,7 +19,7 @@
   </v-col>
 
   <v-col cols="12" id="contact" class="px-10 px-sm-16">
-    <v-row class="pl-lg-16">
+    <v-row class="pl-lg-0">
       <v-col cols="12" lg="3" class="pl-lg-16 text-center">
         <div class="block">
           <h1>Based In</h1>
@@ -106,7 +106,9 @@
             width="max-content"
           />
 
-          <v-btn type="submit" color="#d7ccc8" class="mt-5 mb-1">Submit</v-btn>
+          <v-btn type="submit" color="#d7ccc8" class="mt-2 mb-8">
+            Submit
+          </v-btn>
         </form>
       </v-col>
     </v-row>
@@ -160,8 +162,7 @@ export default {
 <style scoped>
 .hire-banner {
   width: 100%;
-  height: fit-content;
-  padding: 0 14% 65px;
+  padding: 0 14%;
   background-color: #e9e9e9;
   margin-top: -24px;
 }

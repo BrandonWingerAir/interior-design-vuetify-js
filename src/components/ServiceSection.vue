@@ -6,7 +6,7 @@
     </div>
   </div>
 
-  <v-col cols="12" id="services" class="px-0 pt-2">
+  <v-col cols="12" id="services" class="pl-0 pr-2 pt-2">
     <div>
       <v-row>
         <v-col cols="12" class="pb-12">
@@ -53,7 +53,6 @@
 <style scoped>
 #services {
   width: 100%;
-  height: 280px;
   text-align: center;
   padding: 2rem 2rem;
 }
@@ -87,10 +86,6 @@ p {
 }
 
 @media only screen and (max-width: 531px) {
-  #services {
-    height: 835px;
-  }
-
   .block {
     display: block;
     margin-bottom: 20px;

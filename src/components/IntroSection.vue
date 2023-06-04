@@ -75,8 +75,8 @@
   }
 
   .intro-img-position {
-  bottom: 102px;
-  left: 5px;
-}
+    bottom: 102px;
+    left: 5px;
+  }
 }
 </style>

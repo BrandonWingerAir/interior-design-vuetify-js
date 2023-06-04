@@ -14,7 +14,7 @@
           - {{ new Date().getFullYear() }}
         </span>
         <hr width="150px" class="mx-auto my-2" color="#e0e0e0">
-        Website by <a class="text-decoration-none font-weight-medium text-white" href="http://brandonwinger-air.com" target="_blank">Brandon Winger-Air</a> <strong>|</strong> All Rights Reserved
+        Website by <a class="text-decoration-none font-weight-medium text-white" href="https://brandonwinger-air.com" target="_blank">Brandon Winger-Air</a> <strong>|</strong> All Rights Reserved
       </v-card-text>
     </v-card>
   </v-footer>

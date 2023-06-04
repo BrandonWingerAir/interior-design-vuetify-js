@@ -41,7 +41,7 @@
   text-align: center;
   padding: 12px;
   margin-bottom: 6px;
-  height: 400px;
+  padding-bottom: 55px;
   width: 100%;
   color: white;
 }
@@ -69,6 +69,10 @@
 }
 
 @media only screen and (max-width: 599px) {
+  .hero {
+    height: 400px;
+  }
+
   .hero-text {
     text-align: left;
     padding-left: 27px;
